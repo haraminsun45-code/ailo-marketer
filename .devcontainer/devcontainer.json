@@ -1,0 +1,16 @@
+{
+  "name": "AILO Marketer",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "postCreateCommand": "node src/check_structure.js",
+  "remoteEnv": {
+    "OPENAI_MODEL": "${localEnv:OPENAI_MODEL:gpt-5}"
+  }
+}

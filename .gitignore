@@ -1,0 +1,8 @@
+node_modules/
+.env
+outputs/drafts/*.json
+outputs/drafts/*.md
+outputs/approved/*.json
+outputs/approved/*.md
+analytics/*.json
+analytics/*.csv

@@ -1,0 +1,14 @@
+{
+  "name": "ailo-marketer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "draft": "node src/generate_drafts.js",
+    "draft:sample": "node src/generate_drafts.js content_briefs/001-driver-worklog-automation.md",
+    "approve": "node src/approve_draft.js",
+    "publish:dry-run": "node src/publish_dry_run.js",
+    "check": "node src/check_structure.js"
+  },
+  "dependencies": {}
+}
