@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AILO Content Ops</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="ops-shell">
+      <aside class="ops-rail">
+        <div class="brand-block">
+          <div class="brand-mark">A</div>
+          <div>
+            <h1>AILO Content Ops</h1>
+            <p>Marketing production desk</p>
+          </div>
+        </div>
+
+        <section class="rail-section">
+          <div class="section-label">Calendar Builder</div>
+          <div class="calendar-tools">
+            <label>
+              시작일
+              <input id="startDate" type="date" />
+            </label>
+            <label>
+              기간
+              <input id="daysCount" type="number" min="1" max="90" value="30" />
+            </label>
+            <button id="generateCalendarBtn" class="primary-btn">캘린더 생성</button>
+          </div>
+        </section>
+
+        <section class="rail-section calendar-section">
+          <div class="section-label">Production Queue</div>
+          <div class="calendar-list" id="calendarList"></div>
+        </section>
+      </aside>
+
+      <main class="ops-main">
+        <header class="command-bar">
+          <div>
+            <p class="eyebrow" id="activeDate">오늘의 콘텐츠</p>
+            <h2 id="activeTitle">캘린더를 불러오는 중입니다</h2>
+          </div>
+          <div class="command-actions">
+            <label class="mode-switch">
+              <input id="templateMode" type="checkbox" checked />
+              <span>테스트 모드</span>
+            </label>
+            <button id="runDraftBtn" class="primary-btn">초안 생성</button>
+            <button id="approveBtn" class="approve-btn">승인 및 dry-run 생성</button>
+          </div>
+        </header>
+
+        <section class="metric-strip" aria-label="콘텐츠 운영 상태">
+          <div>
+            <span id="calendarCount">0</span>
+            <small>예정 콘텐츠</small>
+          </div>
+          <div>
+            <span id="activeChannels">-</span>
+            <small>채널</small>
+          </div>
+          <div>
+            <span id="activeStatus">-</span>
+            <small>상태</small>
+          </div>
+          <div class="ai-status-panel">
+            <small>OpenAI</small>
+            <strong id="openaiStatus">확인 중</strong>
+            <span id="openaiModel">모델: -</span>
+            <button id="testOpenaiBtn" class="text-btn">연동 확인</button>
+          </div>
+        </section>
+
+        <section class="workflow-map" aria-label="AILO content workflow">
+          <div class="workflow-step is-active">
+            <span>01</span>
+            <strong>현장 로그</strong>
+          </div>
+          <div class="workflow-step">
+            <span>02</span>
+            <strong>패턴 분석</strong>
+          </div>
+          <div class="workflow-step">
+            <span>03</span>
+            <strong>주제 추천</strong>
+          </div>
+          <div class="workflow-step">
+            <span>04</span>
+            <strong>브리프</strong>
+          </div>
+          <div class="workflow-step">
+            <span>05</span>
+            <strong>채널 초안</strong>
+          </div>
+          <div class="workflow-step">
+            <span>06</span>
+            <strong>승인</strong>
+          </div>
+        </section>
+
+        <section class="workspace-grid">
+          <aside class="signal-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Field Signals</p>
+                <h3>추천 주제</h3>
+              </div>
+              <div class="button-row">
+                <button id="promoteInsightsBtn" class="secondary-btn">브리프 생성</button>
+                <button id="refreshInsightsBtn" class="ghost-btn">새로고침</button>
+              </div>
+            </div>
+            <div class="insights-grid" id="insightsGrid"></div>
+          </aside>
+
+          <section class="editor-panel">
+            <div class="editor-toolbar">
+              <div class="file-tabs" id="fileTabs"></div>
+              <div class="toolbar-actions">
+                <span id="previewPath"></span>
+                <button id="copyPreviewBtn" class="secondary-btn">복사</button>
+                <button id="refreshBtn" class="ghost-btn">새로고침</button>
+              </div>
+            </div>
+
+            <article class="preview-panel">
+              <div class="preview-title">
+                <strong id="previewLabel">미리보기</strong>
+              </div>
+              <pre id="previewContent">콘텐츠를 불러오는 중입니다.</pre>
+            </article>
+          </section>
+        </section>
+
+        <section class="quality-panel" aria-label="콘텐츠 품질 상태">
+          <div class="quality-card">
+            <span>SEO</span>
+            <strong id="seoScore">-</strong>
+          </div>
+          <div class="quality-card">
+            <span>브랜드 톤</span>
+            <strong id="brandTone">-</strong>
+          </div>
+          <div class="quality-card">
+            <span>반복 문장</span>
+            <strong id="repetitionRatio">-</strong>
+          </div>
+          <div class="quality-card">
+            <span>AI 문장 위험</span>
+            <strong id="aiRisk">-</strong>
+          </div>
+          <div class="quality-card">
+            <span>읽기 난이도</span>
+            <strong id="readingDifficulty">-</strong>
+          </div>
+          <div class="quality-card wide">
+            <span>채널 적합도</span>
+            <strong id="channelFit">-</strong>
+          </div>
+          <div class="quality-card">
+            <span>CTA</span>
+            <strong id="ctaStatus">-</strong>
+          </div>
+        </section>
+
+        <section class="console-panel">
+          <div class="console-header">
+            <strong>실행 로그</strong>
+            <span id="runStatus">대기 중</span>
+          </div>
+          <pre id="runLog"></pre>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

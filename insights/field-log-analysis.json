@@ -1,0 +1,91 @@
+{
+  "source": "field_logs/sample-operations.json",
+  "createdAt": "2026-05-10T09:57:42.935Z",
+  "patterns": {
+    "totalLogs": 4,
+    "operationTypes": {
+      "fixed-route": 2,
+      "variable-freight": 2
+    },
+    "repeatedIssues": [
+      {
+        "issue": "manual log edit after operation",
+        "count": 1
+      },
+      {
+        "issue": "phone report during route",
+        "count": 1
+      },
+      {
+        "issue": "OCR uncertainty",
+        "count": 1
+      },
+      {
+        "issue": "destination changed during operation",
+        "count": 1
+      },
+      {
+        "issue": "cargo count re-check",
+        "count": 1
+      },
+      {
+        "issue": "unloading mismatch risk",
+        "count": 1
+      },
+      {
+        "issue": "screen interaction reduced",
+        "count": 1
+      }
+    ]
+  },
+  "recommendedTopics": [
+    {
+      "rank": 1,
+      "topic": "하차 실수와 목적지 화물 확인",
+      "pillar": "화물 검증",
+      "sourceIssue": "목적지별 하차 검증",
+      "score": 11,
+      "recommendedAngle": "목적지별 화물 확인이 하차 실수와 불일치 위험을 줄일 수 있다는 점을 다룬다.",
+      "suggestedChannels": [
+        "blog",
+        "threads"
+      ]
+    },
+    {
+      "rank": 2,
+      "topic": "인수증 OCR이 반복 입력을 줄이는 방법",
+      "pillar": "화물 검증",
+      "sourceIssue": "인수증 OCR 불확실성",
+      "score": 6,
+      "recommendedAngle": "인수증 사진에서 화물 정보를 추출하되, 불확실한 결과는 기사 확인이 필요하다는 점을 강조한다.",
+      "suggestedChannels": [
+        "instagram",
+        "shorts"
+      ]
+    },
+    {
+      "rank": 3,
+      "topic": "화물 운송 업무 로그를 자동화해야 하는 이유",
+      "pillar": "업무 로그 자동화",
+      "sourceIssue": "반복 업무 로그와 전화 보고",
+      "score": 4,
+      "recommendedAngle": "수기 기록과 전화 보고가 기사 피로와 기록 누락을 만든다는 점을 보여준다.",
+      "suggestedChannels": [
+        "instagram",
+        "shorts"
+      ]
+    },
+    {
+      "rank": 4,
+      "topic": "물류 현장에서 음성 중심 UX가 중요한 이유",
+      "pillar": "음성 중심 UX",
+      "sourceIssue": "화면 조작 감소와 음성 확인",
+      "score": 3,
+      "recommendedAngle": "운전 중 화면 조작을 줄이고 짧은 음성 확인으로 업무 연속성을 높이는 방향을 제안한다.",
+      "suggestedChannels": [
+        "instagram",
+        "shorts"
+      ]
+    }
+  ]
+}

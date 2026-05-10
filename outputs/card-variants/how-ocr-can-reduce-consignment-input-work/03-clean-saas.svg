@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="100%" height="100%" fill="#f7f9fb"/>
+  <rect x="70" y="70" width="940" height="940" rx="30" fill="#ffffff" stroke="#2c62a3" stroke-width="3"/>
+  <circle cx="952" cy="128" r="28" fill="#2c62a3"/>
+  <text x="952" y="138" text-anchor="middle" font-size="24" font-weight="900" fill="#f7f9fb">A</text>
+  <text x="108" y="134" font-size="30" font-weight="900" letter-spacing="8" fill="#2c62a3">AS-IS / TO-BE</text>
+  <text x="108" y="320" font-size="72" font-weight="900" fill="#162029">수기 기록에서 자동 업무</text>
+<text x="108" y="408" font-size="72" font-weight="900" fill="#162029">로그로</text>
+  <rect x="108" y="658" width="864" height="2" fill="#2c62a3" opacity="0.7"/>
+  <text x="108" y="720" font-size="34" font-weight="650" fill="#627182">AS-IS 사진 누락 · 종이 분실 · 재입력</text>
+<text x="108" y="772" font-size="34" font-weight="650" fill="#627182">TO-BE OCR 요약 · 검증 요청 · 업무</text>
+<text x="108" y="824" font-size="34" font-weight="650" fill="#627182">이력 정리</text>
+  <text x="108" y="980" font-size="28" font-weight="800" fill="#2c62a3">운송사 대상 설명형 카드</text>
+  <text x="972" y="980" text-anchor="end" font-size="26" font-weight="900" fill="#2c62a3">Clean SaaS</text>
+</svg>

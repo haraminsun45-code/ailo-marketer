@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="100%" height="100%" fill="#12251f"/>
+  <rect x="64" y="64" width="952" height="1222" rx="34" fill="#ffffff" fill-opacity="0.08" stroke="#62b99d" stroke-width="3"/>
+  <text x="96" y="138" font-size="30" font-weight="800" letter-spacing="8" fill="#62b99d">AILO CONTENT OPS</text>
+  <text x="96" y="210" font-size="42" font-weight="900" letter-spacing="6" fill="#62b99d">AILO 업무 보조</text>
+  <text x="96" y="364" font-size="70" font-weight="900" fill="#f8fbf8">AI는 기사님을 대신하는</text>
+<text x="96" y="450" font-size="70" font-weight="900" fill="#f8fbf8">게 아니라 업무 흐름을</text>
+<text x="96" y="536" font-size="70" font-weight="900" fill="#f8fbf8">보조합니다</text>
+  <rect x="96" y="834" width="888" height="2" fill="#62b99d" opacity="0.8"/>
+  <text x="96" y="908" font-size="34" font-weight="650" fill="#c6d8d1">AILO는 OCR 기반 인수증 처리로 화물</text>
+<text x="96" y="962" font-size="34" font-weight="650" fill="#c6d8d1">정보를 요약하고 상차 검증을 지원합니다.</text>
+  <text x="96" y="1224" font-size="28" font-weight="800" fill="#62b99d">운전과 판단은 기사님이, 기록과 정리는 AILO가</text>
+  <text x="928" y="1224" text-anchor="end" font-size="26" font-weight="900" fill="#62b99d">03</text>
+</svg>

@@ -1,0 +1,97 @@
+{
+  "slug": "how-ocr-can-reduce-consignment-input-work",
+  "variants": [
+    {
+      "id": "01-driver-trust",
+      "name": "Driver Trust",
+      "format": "1080x1350",
+      "bg": "#f4f6f3",
+      "ink": "#1d2824",
+      "muted": "#63716b",
+      "accent": "#16735d",
+      "panel": "#ffffff",
+      "label": "기사님 중심",
+      "headline": "운행은 기사님이, 기록 흐름은 AILO가 보조합니다",
+      "body": "기사와 운영자는 종이 문서, 사진, 분리된 양식에서 화물 정보를 다시 입력하는 일을 반복합니다.",
+      "footer": "현실적인 화물 운송 업무 보조"
+    },
+    {
+      "id": "02-team-brand",
+      "name": "Team Brand",
+      "format": "1080x1350",
+      "bg": "#14261f",
+      "ink": "#f8fbf8",
+      "muted": "#c9d8d2",
+      "accent": "#b8dcce",
+      "panel": "#1e3a31",
+      "label": "팀 자체가 브랜드",
+      "headline": "부산 야간 냉동팀처럼 신뢰가 보이는 팀",
+      "body": "기사 12명 · 평점 4.9 · 무사고 280일 · 심야배송 특화\n팀의 운행 기록이 곧 팀의 명성이 됩니다.",
+      "footer": "검증된 팀 기반 운송 네트워크"
+    },
+    {
+      "id": "03-control-tower",
+      "name": "Control Tower",
+      "format": "1080x1350",
+      "bg": "#f7f9fb",
+      "ink": "#17212b",
+      "muted": "#637184",
+      "accent": "#2c62a3",
+      "panel": "#ffffff",
+      "label": "실시간 GPS 관제",
+      "headline": "위치, 기록, 팀 상태를 한 흐름으로 봅니다",
+      "body": "운행 위치와 업무 로그가 분리되면 운영 판단이 늦어집니다.\nAILO는 팀 단위 운송 흐름을 더 명확하게 보여줍니다.",
+      "footer": "운송사와 기사님 모두를 위한 가시성"
+    },
+    {
+      "id": "04-reputation-data",
+      "name": "Reputation Data",
+      "format": "1080x1350",
+      "bg": "#fffaf0",
+      "ink": "#241f18",
+      "muted": "#6f675c",
+      "accent": "#9b6b16",
+      "panel": "#ffffff",
+      "label": "명성 경제",
+      "headline": "신뢰는 말보다 기록으로 쌓입니다",
+      "body": "평점, 무사고 기간, 정시율, 특화 운송 이력.\n좋은 팀의 경험이 데이터로 남고 다시 기회가 됩니다.",
+      "footer": "팀의 실력이 시장에서 보이게"
+    },
+    {
+      "id": "05-vehicle-identity",
+      "name": "Vehicle Identity",
+      "format": "1080x1350",
+      "bg": "#f3f2f6",
+      "ink": "#211f2a",
+      "muted": "#6a6575",
+      "accent": "#6d5ea8",
+      "panel": "#ffffff",
+      "label": "차량 커스터마이징",
+      "headline": "차량과 팀의 전문성이 하나의 프로필이 됩니다",
+      "body": "냉동, 야간, 장거리, 정밀 배송처럼 팀과 차량의 강점이 명확하게 보이면 더 맞는 운송이 연결됩니다.",
+      "footer": "과한 게임화가 아니라 현실적인 정체성"
+    },
+    {
+      "id": "06-cafe-wide",
+      "name": "Cafe Wide",
+      "format": "1200x675",
+      "bg": "#ffffff",
+      "ink": "#17221e",
+      "muted": "#5f6c66",
+      "accent": "#b45445",
+      "panel": "#f5f7f4",
+      "label": "화물차 기사님께",
+      "headline": "인수증 OCR이 반복 입력을 줄이는 방법",
+      "body": "이건 우리를 위한 AI다. 기사님의 운행 경험과 팀의 신뢰가 기록으로 남는 운송 플랫폼.",
+      "footer": "네이버 카페 와이드형"
+    }
+  ],
+  "files": [
+    "outputs/card-variants/how-ocr-can-reduce-consignment-input-work/01-driver-trust.svg",
+    "outputs/card-variants/how-ocr-can-reduce-consignment-input-work/02-team-brand.svg",
+    "outputs/card-variants/how-ocr-can-reduce-consignment-input-work/03-control-tower.svg",
+    "outputs/card-variants/how-ocr-can-reduce-consignment-input-work/04-reputation-data.svg",
+    "outputs/card-variants/how-ocr-can-reduce-consignment-input-work/05-vehicle-identity.svg",
+    "outputs/card-variants/how-ocr-can-reduce-consignment-input-work/06-cafe-wide.svg"
+  ]
+}

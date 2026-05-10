@@ -4,6 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dev": "node src/server.js",
+    "analyze:logs": "node src/analyze_field_logs.js",
+    "promote:insights": "node src/promote_insights.js",
+    "calendar": "node src/generate_calendar.js",
+    "run:item": "node src/run_calendar_item.js",
+    "run:daily": "node src/run_daily_pipeline.js",
     "draft": "node src/generate_drafts.js",
     "draft:sample": "node src/generate_drafts.js content_briefs/001-driver-worklog-automation.md",
     "approve": "node src/approve_draft.js",

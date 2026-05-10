@@ -1,23 +1,55 @@
 # AILO Brand Voice
 
-AILO sounds like an experienced logistics workflow partner.
+AILO는 화물 기사님들을 위한 AI 기반 운송 플랫폼입니다.
 
-Use:
+## 핵심 방향
 
-- short sentences
-- calm operational language
-- practical field examples
-- driver-first framing
-- clear before/after contrast
+- 기사님 중심
+- 팀 기반 신뢰 시스템
+- 명성 경제
+- AI 업무 보조
+- 차량 커스터마이징
+- 실시간 GPS 관제
+- 현실적인 화물 운송 문화
 
-Avoid:
+## 반드시 지킬 톤
 
-- chatbot-like friendliness
-- exaggerated AI claims
-- technical implementation details unless needed
-- long abstract explanations
-- unsafe driving implications
+- 현실적
+- 신뢰감
+- 팀 중심
+- 기사님 공감
+- 실제 업무 문제 해결
+- 차분하고 실무적인 설명
 
-Core sentence:
+## 절대 피할 것
 
-> Drivers focus on driving. AILO handles the workflow.
+- 과한 게임 느낌
+- MZ 밈 스타일
+- 유치한 표현
+- 과도한 미래 SF 느낌
+- 가벼운 광고 느낌
+- 근거 없는 자동화 과장
+- 기사님을 가르치거나 평가하는 듯한 말투
+
+## 중요 컨셉
+
+- "이건 우리를 위한 AI다"
+- 팀 자체가 브랜드가 된다
+- 신뢰를 데이터화한다
+- 검증된 팀 기반 운송 네트워크
+- 운전자는 운행과 판단에 집중하고, AILO는 기록과 흐름을 보조한다
+
+## 대표 예시
+
+부산 야간 냉동팀
+
+- 기사 12명
+- 평점 4.9
+- 무사고 280일
+- 심야배송 특화
+
+이런 팀이 하나의 브랜드처럼 보이게 표현한다.
+
+## 기본 문장
+
+> AILO는 기사님의 실제 운송 경험과 팀의 신뢰를 기록으로 남기는 AI 업무 보조 플랫폼입니다.

@@ -42,11 +42,12 @@ export async function createMarketingDraftWithOpenAI({ brief, brandVoice, channe
     body: JSON.stringify({
       model,
       instructions: [
-        "You are AILO's marketing content strategist.",
-        "Create practical, field-oriented Korean marketing drafts for freight drivers and transportation companies.",
-        "AILO is not a chatbot. AILO is an operational AI co-driver and workflow assistant.",
-        "Avoid exaggerated AI claims. Avoid unsafe driving implications. Keep copy calm, short, and realistic.",
-        "Return only valid JSON that matches the requested structure."
+        "당신은 AILO의 마케팅 콘텐츠 전략가입니다.",
+        "모든 콘텐츠 본문, 제목, 장면 설명, 자막, 내레이션, 캡션, 메타 설명, 해시태그는 한국어로 작성합니다.",
+        "예외적으로 브랜드명 AILO와 플랫폼명 Threads, Instagram, Shorts는 그대로 사용할 수 있습니다.",
+        "AILO는 챗봇이 아니라 화물 운송 업무 흐름을 돕는 운영 assistant입니다.",
+        "과장된 AI 표현과 위험한 운전 암시를 피합니다. 문장은 차분하고 짧고 실무적으로 작성합니다.",
+        "요청한 구조와 일치하는 유효한 JSON만 반환합니다."
       ].join("\n"),
       input: [
         {
@@ -55,7 +56,9 @@ export async function createMarketingDraftWithOpenAI({ brief, brandVoice, channe
             {
               type: "input_text",
               text: [
-                "Create channel-ready AILO marketing drafts from this brief.",
+                "아래 브리프를 바탕으로 채널별 AILO 마케팅 초안을 작성하세요.",
+                "모든 탭에 표시될 내용은 한국어여야 합니다.",
+                "영어 문장이 브리프에 포함되어 있어도 한국어로 자연스럽게 재작성하세요.",
                 "",
                 "BRAND VOICE:",
                 brandVoice,
@@ -127,10 +130,25 @@ export async function createMarketingDraftWithOpenAI({ brief, brandVoice, channe
               shorts: {
                 type: "object",
                 additionalProperties: false,
-                required: ["title", "duration", "scenes"],
+                required: [
+                  "title",
+                  "duration",
+                  "hook",
+                  "script30",
+                  "script60",
+                  "scenes",
+                  "onScreenKeywords",
+                  "brollSuggestions",
+                  "thumbnailText",
+                  "uploadDescription",
+                  "hashtags"
+                ],
                 properties: {
                   title: { type: "string" },
                   duration: { type: "string" },
+                  hook: { type: "string" },
+                  script30: { type: "string" },
+                  script60: { type: "string" },
                   scenes: {
                     type: "array",
                     minItems: 4,
@@ -146,6 +164,26 @@ export async function createMarketingDraftWithOpenAI({ brief, brandVoice, channe
                         narration: { type: "string" }
                       }
                     }
+                  },
+                  onScreenKeywords: {
+                    type: "array",
+                    minItems: 4,
+                    maxItems: 8,
+                    items: { type: "string" }
+                  },
+                  brollSuggestions: {
+                    type: "array",
+                    minItems: 4,
+                    maxItems: 8,
+                    items: { type: "string" }
+                  },
+                  thumbnailText: { type: "string" },
+                  uploadDescription: { type: "string" },
+                  hashtags: {
+                    type: "array",
+                    minItems: 5,
+                    maxItems: 10,
+                    items: { type: "string" }
                   }
                 }
               }
@@ -154,6 +192,9 @@ export async function createMarketingDraftWithOpenAI({ brief, brandVoice, channe
         }
       }
     })
+  }).catch((error) => {
+    const cause = error.cause?.message ? ` (${error.cause.message})` : "";
+    throw new Error(`OpenAI network request failed${cause}.`);
   });
 
   const payload = await response.json().catch(() => null);
@@ -169,4 +210,46 @@ export async function createMarketingDraftWithOpenAI({ brief, brandVoice, channe
   }
 
   return JSON.parse(text);
+}
+
+export async function testOpenAIConnection() {
+  const apiKey = process.env.OPENAI_API_KEY;
+  if (!apiKey) {
+    return {
+      ok: false,
+      model: process.env.OPENAI_MODEL || "gpt-5",
+      message: "OPENAI_API_KEY is not set."
+    };
+  }
+
+  const model = process.env.OPENAI_MODEL || "gpt-5";
+  const response = await fetch(OPENAI_RESPONSES_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${apiKey}`
+    },
+    body: JSON.stringify({
+      model,
+      input: "Reply with exactly: AILO_OPENAI_OK"
+    })
+  }).catch((error) => {
+    const cause = error.cause?.message ? ` (${error.cause.message})` : "";
+    throw new Error(`OpenAI network request failed${cause}.`);
+  });
+
+  const payload = await response.json().catch(() => null);
+  if (!response.ok) {
+    return {
+      ok: false,
+      model,
+      message: payload?.error?.message ?? `OpenAI API request failed with status ${response.status}.`
+    };
+  }
+
+  return {
+    ok: true,
+    model,
+    message: payload?.output_text || "OpenAI connection succeeded."
+  };
 }

@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2026-05-01",
+    "operationType": "fixed-route",
+    "route": "Incheon -> Seoul",
+    "events": ["clock-in", "loading", "manual-call-report", "unloading", "worklog-edit"],
+    "issues": ["manual log edit after operation", "phone report during route"],
+    "driverNote": "Reports and log edits happened after unloading."
+  },
+  {
+    "date": "2026-05-02",
+    "operationType": "variable-freight",
+    "route": "Gimpo -> Suwon",
+    "events": ["consignment-photo", "ocr-check", "loading", "destination-change", "unloading"],
+    "issues": ["OCR uncertainty", "destination changed during operation"],
+    "driverNote": "Consignment quantity was unclear in the photo."
+  },
+  {
+    "date": "2026-05-03",
+    "operationType": "variable-freight",
+    "route": "Pyeongtaek -> Anyang",
+    "events": ["loading", "cargo-count-check", "unloading", "cargo-mismatch-check"],
+    "issues": ["cargo count re-check", "unloading mismatch risk"],
+    "driverNote": "Driver had to check destination cargo twice."
+  },
+  {
+    "date": "2026-05-04",
+    "operationType": "fixed-route",
+    "route": "Seoul -> Namyangju",
+    "events": ["clock-in", "loading", "voice-confirmation", "unloading", "auto-worklog"],
+    "issues": ["screen interaction reduced"],
+    "driverNote": "Voice confirmation was easier than opening the app."
+  }
+]

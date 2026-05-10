@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="100%" height="100%" fill="#f4f6f3"/>
+  <rect x="70" y="70" width="940" height="1210" rx="30" fill="#ffffff" stroke="#16735d" stroke-width="3"/>
+  <circle cx="952" cy="128" r="28" fill="#16735d"/>
+  <text x="952" y="138" text-anchor="middle" font-size="24" font-weight="900" fill="#f4f6f3">A</text>
+  <text x="108" y="140" font-size="30" font-weight="900" letter-spacing="5" fill="#16735d">기사님 중심</text>
+  <text x="108" y="355" font-size="70" font-weight="900" fill="#1d2824">운행은 기사님이, 기록</text>
+<text x="108" y="441" font-size="70" font-weight="900" fill="#1d2824">흐름은 AILO가</text>
+<text x="108" y="527" font-size="70" font-weight="900" fill="#1d2824">보조합니다</text>
+  <rect x="108" y="804" width="864" height="2" fill="#16735d" opacity="0.7"/>
+  <text x="108" y="870" font-size="34" font-weight="650" fill="#63716b">기사와 운영자는 종이 문서, 사진, 분리된</text>
+<text x="108" y="924" font-size="34" font-weight="650" fill="#63716b">양식에서 화물 정보를 다시 입력하는 일을</text>
+<text x="108" y="978" font-size="34" font-weight="650" fill="#63716b">반복합니다.</text>
+  <text x="108" y="1244" font-size="28" font-weight="800" fill="#16735d">현실적인 화물 운송 업무 보조</text>
+  <text x="972" y="1244" text-anchor="end" font-size="24" font-weight="900" fill="#16735d">Driver Trust</text>
+</svg>

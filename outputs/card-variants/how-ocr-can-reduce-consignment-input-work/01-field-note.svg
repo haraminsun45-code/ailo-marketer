@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="100%" height="100%" fill="#f4f1e8"/>
+  <rect x="70" y="70" width="940" height="940" rx="30" fill="#fffdf8" stroke="#1f6f59" stroke-width="3"/>
+  <circle cx="952" cy="128" r="28" fill="#1f6f59"/>
+  <text x="952" y="138" text-anchor="middle" font-size="24" font-weight="900" fill="#f4f1e8">A</text>
+  <text x="108" y="134" font-size="30" font-weight="900" letter-spacing="8" fill="#1f6f59">FIELD NOTE</text>
+  <text x="108" y="320" font-size="72" font-weight="900" fill="#1f2623">현장 기록은 운전 흐름을</text>
+<text x="108" y="408" font-size="72" font-weight="900" fill="#1f2623">끊지 않아야 합니다</text>
+  <rect x="108" y="658" width="864" height="2" fill="#1f6f59" opacity="0.7"/>
+  <text x="108" y="720" font-size="34" font-weight="650" fill="#626b66">기사와 운영자는 종이 문서, 사진, 분리된</text>
+<text x="108" y="772" font-size="34" font-weight="650" fill="#626b66">양식에서 화물 정보를 다시 입력하는 일을</text>
+<text x="108" y="824" font-size="34" font-weight="650" fill="#626b66">반복합니다.</text>
+  <text x="108" y="980" font-size="28" font-weight="800" fill="#1f6f59">차분한 실무형 카드 · 블로그/카페 겸용</text>
+  <text x="972" y="980" text-anchor="end" font-size="26" font-weight="900" fill="#1f6f59">Field Note</text>
+</svg>

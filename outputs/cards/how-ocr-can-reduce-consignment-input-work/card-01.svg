@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect x="64" y="64" width="952" height="1222" rx="34" fill="#edf3ef" fill-opacity="1" stroke="#16735d" stroke-width="3"/>
+  <text x="96" y="138" font-size="30" font-weight="800" letter-spacing="8" fill="#16735d">AILO CONTENT OPS</text>
+  <text x="96" y="210" font-size="42" font-weight="900" letter-spacing="6" fill="#16735d">기사님 관점</text>
+  <text x="96" y="364" font-size="70" font-weight="900" fill="#17221e">기록 때문에 운행 흐름이</text>
+<text x="96" y="450" font-size="70" font-weight="900" fill="#17221e">끊기지 않도록</text>
+  <rect x="96" y="834" width="888" height="2" fill="#16735d" opacity="0.8"/>
+  <text x="96" y="908" font-size="34" font-weight="650" fill="#66736d">기사와 운영자는 종이 문서, 사진, 분리된</text>
+<text x="96" y="962" font-size="34" font-weight="650" fill="#66736d">양식에서 화물 정보를 다시 입력하는 일을</text>
+<text x="96" y="1016" font-size="34" font-weight="650" fill="#66736d">반복합니다.</text>
+  <text x="96" y="1224" font-size="28" font-weight="800" fill="#16735d">현실적인 화물 운송 업무를 위한 AI 보조</text>
+  <text x="928" y="1224" text-anchor="end" font-size="26" font-weight="900" fill="#16735d">01</text>
+</svg>

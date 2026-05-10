@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>시급 기록장</title>
+    <link rel="stylesheet" href="/hourly.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Hourly Work Log</p>
+          <h1>시급 기록장</h1>
+          <p class="summary-text">월~금 주 5일 근무 기준으로 시간, 수당, 월 예상 급여를 한눈에 확인합니다.</p>
+        </div>
+        <div class="hero-controls">
+          <label for="monthInput">정산 월</label>
+          <input id="monthInput" type="month" />
+        </div>
+      </section>
+
+      <section class="stats" aria-label="급여 요약">
+        <div>
+          <span>총 인정 시간</span>
+          <strong id="totalHours">0시간</strong>
+        </div>
+        <div>
+          <span>월 예상 급여</span>
+          <strong id="totalPay">0원</strong>
+        </div>
+        <div>
+          <span>주급 예상</span>
+          <strong id="weeklyPay">0원</strong>
+        </div>
+        <div>
+          <span>연봉 예상</span>
+          <strong id="yearlyPay">0원</strong>
+        </div>
+        <div>
+          <span>세후 예상</span>
+          <strong id="netPay">0원</strong>
+        </div>
+        <div>
+          <span>근무일</span>
+          <strong id="workDays">0일</strong>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <form id="entryForm" class="entry-form">
+          <div class="section-title">
+            <h2>근무 기록</h2>
+            <p>기본 시급은 10,800원입니다.</p>
+          </div>
+
+          <div class="field-grid">
+            <label>
+              날짜
+              <input id="dateInput" type="date" required />
+            </label>
+            <label>
+              직장/알바명
+              <input id="jobInput" type="text" value="기본 근무지" />
+            </label>
+            <label>
+              출근 시간
+              <input id="startInput" type="time" value="09:00" required />
+            </label>
+            <label>
+              퇴근 시간
+              <input id="endInput" type="time" value="18:00" required />
+            </label>
+            <label>
+              휴게시간 자동 차감
+              <input id="breakInput" type="number" min="0" step="10" value="60" />
+            </label>
+            <label>
+              시급
+              <input id="rateInput" type="number" min="0" step="100" value="10800" required />
+            </label>
+            <label>
+              시간 조정
+              <input id="adjustInput" type="number" step="0.5" value="0" />
+            </label>
+            <label>
+              공제율
+              <input id="deductionInput" type="number" min="0" max="50" step="0.1" value="3.3" />
+            </label>
+          </div>
+
+          <label>
+            메모
+            <input id="memoInput" type="text" placeholder="예: 1시간 조기퇴근, 30분 연장, 야간 근무" />
+          </label>
+
+          <div class="quick-adjust">
+            <button type="button" data-adjust="-1">-1시간</button>
+            <button type="button" data-adjust="-0.5">-30분</button>
+            <button type="button" data-adjust="0.5">+30분</button>
+            <button type="button" data-adjust="1">+1시간</button>
+          </div>
+
+          <div class="toggle-row">
+            <label class="check">
+              <input id="weeklyHolidayInput" type="checkbox" checked />
+              <span>주휴수당 예상 포함</span>
+            </label>
+            <label class="check">
+              <input id="allowanceInput" type="checkbox" checked />
+              <span>연장/야간수당 예상 포함</span>
+            </label>
+          </div>
+
+          <button class="save-btn" type="submit">기록 저장</button>
+        </form>
+
+        <section class="calendar-panel">
+          <div class="section-title">
+            <h2>월간 캘린더</h2>
+            <p>월~금 근무일과 실제 기록을 한눈에 봅니다.</p>
+          </div>
+          <div class="calendar-weekdays">
+            <span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span><span>일</span>
+          </div>
+          <div id="calendarGrid" class="calendar-grid"></div>
+        </section>
+      </section>
+
+      <section class="records">
+        <div class="records-header">
+          <div>
+            <h2>이번 달 기록</h2>
+            <p>기록을 누르면 수정할 수 있습니다.</p>
+          </div>
+          <div class="records-actions">
+            <button id="exportCsvBtn" class="ghost-btn" type="button">CSV 다운로드</button>
+            <button id="clearMonthBtn" class="ghost-btn danger" type="button">이번 달 삭제</button>
+          </div>
+        </div>
+        <div id="recordList" class="record-list"></div>
+      </section>
+    </main>
+
+    <script src="/hourly.js" type="module"></script>
+  </body>
+</html>

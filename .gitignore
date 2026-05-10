@@ -6,3 +6,5 @@ outputs/approved/*.json
 outputs/approved/*.md
 analytics/*.json
 analytics/*.csv
+server.out.log
+server.err.log

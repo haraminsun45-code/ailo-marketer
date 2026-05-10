@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="100%" height="100%" fill="#f4f7f4"/>
+  <rect x="64" y="64" width="952" height="1222" rx="34" fill="#ffffff" fill-opacity="1" stroke="#2c62a3" stroke-width="3"/>
+  <text x="96" y="138" font-size="30" font-weight="800" letter-spacing="8" fill="#2c62a3">AILO CONTENT OPS</text>
+  <text x="96" y="210" font-size="42" font-weight="900" letter-spacing="6" fill="#2c62a3">팀 신뢰</text>
+  <text x="96" y="364" font-size="70" font-weight="900" fill="#17221e">팀 자체가 브랜드가 되는</text>
+<text x="96" y="450" font-size="70" font-weight="900" fill="#17221e">운송 네트워크</text>
+  <rect x="96" y="834" width="888" height="2" fill="#2c62a3" opacity="0.8"/>
+  <text x="96" y="908" font-size="34" font-weight="650" fill="#66736d">부산 야간 냉동팀 · 기사 12명 · 평점</text>
+<text x="96" y="962" font-size="34" font-weight="650" fill="#66736d">4.9 · 무사고 280일 · 심야배송 특화</text>
+  <text x="96" y="1224" font-size="28" font-weight="800" fill="#2c62a3">신뢰를 말이 아니라 기록으로 보여줍니다</text>
+  <text x="928" y="1224" text-anchor="end" font-size="26" font-weight="900" fill="#2c62a3">02</text>
+</svg>

@@ -1,0 +1,61 @@
+{
+  "cards": [
+    {
+      "format": "instagram-vertical",
+      "width": 1080,
+      "height": 1350,
+      "eyebrow": "기사님 관점",
+      "headline": "기록 때문에 운행 흐름이 끊기지 않도록",
+      "body": "기사와 운영자는 종이 문서, 사진, 분리된 양식에서 화물 정보를 다시 입력하는 일을 반복합니다.",
+      "footer": "현실적인 화물 운송 업무를 위한 AI 보조",
+      "theme": "plain"
+    },
+    {
+      "format": "instagram-vertical",
+      "width": 1080,
+      "height": 1350,
+      "eyebrow": "팀 신뢰",
+      "headline": "팀 자체가 브랜드가 되는 운송 네트워크",
+      "body": "부산 야간 냉동팀 · 기사 12명 · 평점 4.9 · 무사고 280일 · 심야배송 특화",
+      "footer": "신뢰를 말이 아니라 기록으로 보여줍니다",
+      "theme": "compare"
+    },
+    {
+      "format": "instagram-vertical",
+      "width": 1080,
+      "height": 1350,
+      "eyebrow": "AILO 업무 보조",
+      "headline": "AI는 기사님을 대신하는 게 아니라 업무 흐름을 보조합니다",
+      "body": "AILO는 OCR 기반 인수증 처리로 화물 정보를 요약하고 상차 검증을 지원합니다.",
+      "footer": "운전과 판단은 기사님이, 기록과 정리는 AILO가",
+      "theme": "deep"
+    },
+    {
+      "format": "instagram-vertical",
+      "width": 1080,
+      "height": 1350,
+      "eyebrow": "신뢰 데이터",
+      "headline": "평점, 운행 이력, 무사고 기록이 팀의 명성이 됩니다",
+      "body": "검증된 팀 기반 운송 네트워크에서는 누가 어떤 운송을 잘해왔는지가 중요한 자산이 됩니다.",
+      "footer": "팀의 실력이 데이터로 남는 구조",
+      "theme": "steps"
+    },
+    {
+      "format": "instagram-vertical",
+      "width": 1080,
+      "height": 1350,
+      "eyebrow": "이건 우리를 위한 AI",
+      "headline": "인수증 OCR이 반복 입력을 줄이는 방법",
+      "body": "AILO는 화물 문서를 운송 업무 데이터로 바꾸는 것을 돕습니다.",
+      "footer": "과한 게임이 아니라, 실제 운송 문화를 위한 플랫폼",
+      "theme": "cta"
+    }
+  ],
+  "files": [
+    "outputs/cards/how-ocr-can-reduce-consignment-input-work/card-01.svg",
+    "outputs/cards/how-ocr-can-reduce-consignment-input-work/card-02.svg",
+    "outputs/cards/how-ocr-can-reduce-consignment-input-work/card-03.svg",
+    "outputs/cards/how-ocr-can-reduce-consignment-input-work/card-04.svg",
+    "outputs/cards/how-ocr-can-reduce-consignment-input-work/card-05.svg"
+  ]
+}

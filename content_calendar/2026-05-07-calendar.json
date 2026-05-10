@@ -1,0 +1,445 @@
+{
+  "startDate": "2026-05-07",
+  "totalDays": 33,
+  "calendar": [
+    {
+      "day": 1,
+      "date": "2026-05-07",
+      "title": "Why freight work logs should be automated",
+      "pillar": "기사 업무 부담",
+      "channels": [
+        "blog",
+        "threads"
+      ],
+      "briefPath": "content_briefs/001-why-freight-work-logs-should-be-automated.md",
+      "status": "draft_ready",
+      "lastRunMode": "template",
+      "lastRunChannels": [
+        "blog",
+        "threads"
+      ],
+      "outputs": {
+        "draftJson": "outputs/drafts/why-freight-work-logs-should-be-automated.json",
+        "draftMd": "outputs/drafts/why-freight-work-logs-should-be-automated.md"
+      },
+      "updatedAt": "2026-05-08T12:06:34.085Z"
+    },
+    {
+      "day": 2,
+      "date": "2026-05-08",
+      "title": "Why drivers should not have to touch apps while driving",
+      "pillar": "음성 중심 UX",
+      "channels": [
+        "instagram",
+        "shorts"
+      ],
+      "briefPath": "content_briefs/002-why-drivers-should-not-have-to-touch-apps-while-driving.md",
+      "status": "draft_ready",
+      "lastRunMode": "template",
+      "lastRunChannels": [
+        "instagram",
+        "shorts"
+      ],
+      "outputs": {
+        "draftJson": "outputs/drafts/why-drivers-should-not-have-to-touch-apps-while-driving.json",
+        "draftMd": "outputs/drafts/why-drivers-should-not-have-to-touch-apps-while-driving.md"
+      },
+      "updatedAt": "2026-05-08T11:27:06.637Z"
+    },
+    {
+      "day": 3,
+      "date": "2026-05-09",
+      "title": "How OCR can reduce consignment input work",
+      "pillar": "화물 검증",
+      "channels": [
+        "threads"
+      ],
+      "briefPath": "content_briefs/003-how-ocr-can-reduce-consignment-input-work.md",
+      "status": "draft_ready",
+      "lastRunMode": "template",
+      "lastRunChannels": [
+        "threads"
+      ],
+      "outputs": {
+        "draftJson": "outputs/drafts/how-ocr-can-reduce-consignment-input-work.json",
+        "draftMd": "outputs/drafts/how-ocr-can-reduce-consignment-input-work.md"
+      },
+      "updatedAt": "2026-05-10T09:44:18.944Z"
+    },
+    {
+      "day": 4,
+      "date": "2026-05-10",
+      "title": "Loading verification without complicated screens",
+      "pillar": "화물 검증",
+      "channels": [
+        "instagram"
+      ],
+      "briefPath": "content_briefs/004-loading-verification-without-complicated-screens.md",
+      "status": "dry_run_ready",
+      "lastRunMode": "template",
+      "lastRunChannels": [
+        "instagram"
+      ],
+      "outputs": {
+        "draftJson": "outputs/drafts/loading-verification-without-complicated-screens.json",
+        "draftMd": "outputs/drafts/loading-verification-without-complicated-screens.md",
+        "approvedJson": "outputs/approved/loading-verification-without-complicated-screens.json",
+        "approvedMd": "outputs/approved/loading-verification-without-complicated-screens.md",
+        "dryRunJson": "analytics/loading-verification-without-complicated-screens.dry-run.json",
+        "dryRunMd": "analytics/loading-verification-without-complicated-screens.dry-run.md"
+      },
+      "updatedAt": "2026-05-10T09:03:55.380Z"
+    },
+    {
+      "day": 5,
+      "date": "2026-05-11",
+      "title": "Unloading mistakes and destination cargo checks",
+      "pillar": "화물 검증",
+      "channels": [
+        "blog"
+      ],
+      "briefPath": "content_briefs/005-unloading-mistakes-and-destination-cargo-checks.md",
+      "status": "planned"
+    },
+    {
+      "day": 6,
+      "date": "2026-05-12",
+      "title": "Fixed-route freight vs variable freight workflows",
+      "pillar": "업무 자동화",
+      "channels": [
+        "threads",
+        "shorts"
+      ],
+      "briefPath": "content_briefs/006-fixed-route-freight-vs-variable-freight-workflows.md",
+      "status": "planned"
+    },
+    {
+      "day": 7,
+      "date": "2026-05-13",
+      "title": "What an AI operational co-driver means",
+      "pillar": "업무 자동화",
+      "channels": [
+        "instagram",
+        "threads"
+      ],
+      "briefPath": "content_briefs/007-what-an-ai-operational-co-driver-means.md",
+      "status": "planned"
+    },
+    {
+      "day": 8,
+      "date": "2026-05-14",
+      "title": "Why transportation companies need workflow visibility",
+      "pillar": "운송사 운영",
+      "channels": [
+        "blog",
+        "threads"
+      ],
+      "briefPath": "content_briefs/008-why-transportation-companies-need-workflow-visibility.md",
+      "status": "planned"
+    },
+    {
+      "day": 9,
+      "date": "2026-05-15",
+      "title": "Low-risk automation vs driver confirmation",
+      "pillar": "업무 자동화",
+      "channels": [
+        "instagram",
+        "shorts"
+      ],
+      "briefPath": "content_briefs/009-low-risk-automation-vs-driver-confirmation.md",
+      "status": "planned"
+    },
+    {
+      "day": 10,
+      "date": "2026-05-16",
+      "title": "Why voice-first UX matters in logistics",
+      "pillar": "음성 중심 UX",
+      "channels": [
+        "threads"
+      ],
+      "briefPath": "content_briefs/010-why-voice-first-ux-matters-in-logistics.md",
+      "status": "planned"
+    },
+    {
+      "day": 11,
+      "date": "2026-05-17",
+      "title": "Why freight work logs should be automated",
+      "pillar": "기사 업무 부담",
+      "channels": [
+        "instagram"
+      ],
+      "briefPath": "content_briefs/011-why-freight-work-logs-should-be-automated.md",
+      "status": "planned"
+    },
+    {
+      "day": 12,
+      "date": "2026-05-18",
+      "title": "Why drivers should not have to touch apps while driving",
+      "pillar": "음성 중심 UX",
+      "channels": [
+        "blog"
+      ],
+      "briefPath": "content_briefs/012-why-drivers-should-not-have-to-touch-apps-while-driving.md",
+      "status": "planned"
+    },
+    {
+      "day": 13,
+      "date": "2026-05-19",
+      "title": "How OCR can reduce consignment input work",
+      "pillar": "화물 검증",
+      "channels": [
+        "threads",
+        "shorts"
+      ],
+      "briefPath": "content_briefs/013-how-ocr-can-reduce-consignment-input-work.md",
+      "status": "planned"
+    },
+    {
+      "day": 14,
+      "date": "2026-05-20",
+      "title": "Loading verification without complicated screens",
+      "pillar": "화물 검증",
+      "channels": [
+        "instagram",
+        "threads"
+      ],
+      "briefPath": "content_briefs/014-loading-verification-without-complicated-screens.md",
+      "status": "planned"
+    },
+    {
+      "day": 15,
+      "date": "2026-05-21",
+      "title": "Unloading mistakes and destination cargo checks",
+      "pillar": "화물 검증",
+      "channels": [
+        "blog",
+        "threads"
+      ],
+      "briefPath": "content_briefs/015-unloading-mistakes-and-destination-cargo-checks.md",
+      "status": "planned"
+    },
+    {
+      "day": 16,
+      "date": "2026-05-22",
+      "title": "Fixed-route freight vs variable freight workflows",
+      "pillar": "업무 자동화",
+      "channels": [
+        "instagram",
+        "shorts"
+      ],
+      "briefPath": "content_briefs/016-fixed-route-freight-vs-variable-freight-workflows.md",
+      "status": "planned"
+    },
+    {
+      "day": 17,
+      "date": "2026-05-23",
+      "title": "What an AI operational co-driver means",
+      "pillar": "업무 자동화",
+      "channels": [
+        "threads"
+      ],
+      "briefPath": "content_briefs/017-what-an-ai-operational-co-driver-means.md",
+      "status": "planned"
+    },
+    {
+      "day": 18,
+      "date": "2026-05-24",
+      "title": "Why transportation companies need workflow visibility",
+      "pillar": "운송사 운영",
+      "channels": [
+        "instagram"
+      ],
+      "briefPath": "content_briefs/018-why-transportation-companies-need-workflow-visibility.md",
+      "status": "planned"
+    },
+    {
+      "day": 19,
+      "date": "2026-05-25",
+      "title": "Low-risk automation vs driver confirmation",
+      "pillar": "업무 자동화",
+      "channels": [
+        "blog"
+      ],
+      "briefPath": "content_briefs/019-low-risk-automation-vs-driver-confirmation.md",
+      "status": "planned"
+    },
+    {
+      "day": 20,
+      "date": "2026-05-26",
+      "title": "Why voice-first UX matters in logistics",
+      "pillar": "음성 중심 UX",
+      "channels": [
+        "threads",
+        "shorts"
+      ],
+      "briefPath": "content_briefs/020-why-voice-first-ux-matters-in-logistics.md",
+      "status": "planned"
+    },
+    {
+      "day": 21,
+      "date": "2026-05-27",
+      "title": "Why freight work logs should be automated",
+      "pillar": "기사 업무 부담",
+      "channels": [
+        "instagram",
+        "threads"
+      ],
+      "briefPath": "content_briefs/021-why-freight-work-logs-should-be-automated.md",
+      "status": "planned"
+    },
+    {
+      "day": 22,
+      "date": "2026-05-28",
+      "title": "Why drivers should not have to touch apps while driving",
+      "pillar": "음성 중심 UX",
+      "channels": [
+        "blog",
+        "threads"
+      ],
+      "briefPath": "content_briefs/022-why-drivers-should-not-have-to-touch-apps-while-driving.md",
+      "status": "planned"
+    },
+    {
+      "day": 23,
+      "date": "2026-05-29",
+      "title": "How OCR can reduce consignment input work",
+      "pillar": "화물 검증",
+      "channels": [
+        "instagram",
+        "shorts"
+      ],
+      "briefPath": "content_briefs/023-how-ocr-can-reduce-consignment-input-work.md",
+      "status": "planned"
+    },
+    {
+      "day": 24,
+      "date": "2026-05-30",
+      "title": "Loading verification without complicated screens",
+      "pillar": "화물 검증",
+      "channels": [
+        "threads"
+      ],
+      "briefPath": "content_briefs/024-loading-verification-without-complicated-screens.md",
+      "status": "planned"
+    },
+    {
+      "day": 25,
+      "date": "2026-05-31",
+      "title": "Unloading mistakes and destination cargo checks",
+      "pillar": "화물 검증",
+      "channels": [
+        "instagram"
+      ],
+      "briefPath": "content_briefs/025-unloading-mistakes-and-destination-cargo-checks.md",
+      "status": "planned"
+    },
+    {
+      "day": 26,
+      "date": "2026-06-01",
+      "title": "Fixed-route freight vs variable freight workflows",
+      "pillar": "업무 자동화",
+      "channels": [
+        "blog"
+      ],
+      "briefPath": "content_briefs/026-fixed-route-freight-vs-variable-freight-workflows.md",
+      "status": "planned"
+    },
+    {
+      "day": 27,
+      "date": "2026-06-02",
+      "title": "What an AI operational co-driver means",
+      "pillar": "업무 자동화",
+      "channels": [
+        "threads",
+        "shorts"
+      ],
+      "briefPath": "content_briefs/027-what-an-ai-operational-co-driver-means.md",
+      "status": "planned"
+    },
+    {
+      "day": 28,
+      "date": "2026-06-03",
+      "title": "Why transportation companies need workflow visibility",
+      "pillar": "운송사 운영",
+      "channels": [
+        "instagram",
+        "threads"
+      ],
+      "briefPath": "content_briefs/028-why-transportation-companies-need-workflow-visibility.md",
+      "status": "planned"
+    },
+    {
+      "day": 29,
+      "date": "2026-06-04",
+      "title": "Low-risk automation vs driver confirmation",
+      "pillar": "업무 자동화",
+      "channels": [
+        "blog",
+        "threads"
+      ],
+      "briefPath": "content_briefs/029-low-risk-automation-vs-driver-confirmation.md",
+      "status": "planned"
+    },
+    {
+      "day": 30,
+      "date": "2026-06-05",
+      "title": "Why voice-first UX matters in logistics",
+      "pillar": "음성 중심 UX",
+      "channels": [
+        "instagram",
+        "shorts"
+      ],
+      "briefPath": "content_briefs/030-why-voice-first-ux-matters-in-logistics.md",
+      "status": "planned"
+    },
+    {
+      "day": 31,
+      "date": "2026-06-06",
+      "title": "하차 실수와 목적지 화물 확인",
+      "pillar": "화물 검증",
+      "channels": [
+        "blog",
+        "threads"
+      ],
+      "briefPath": "content_briefs/031-field-insight-01.md",
+      "status": "planned",
+      "origin": "field_log_insight",
+      "sourceIssue": "목적지별 하차 검증",
+      "insightScore": 11,
+      "createdAt": "2026-05-08T11:40:32.481Z"
+    },
+    {
+      "day": 32,
+      "date": "2026-06-07",
+      "title": "인수증 OCR이 반복 입력을 줄이는 방법",
+      "pillar": "화물 검증",
+      "channels": [
+        "instagram",
+        "shorts"
+      ],
+      "briefPath": "content_briefs/032-field-ocr.md",
+      "status": "planned",
+      "origin": "field_log_insight",
+      "sourceIssue": "인수증 OCR 불확실성",
+      "insightScore": 6,
+      "createdAt": "2026-05-08T11:40:32.483Z"
+    },
+    {
+      "day": 33,
+      "date": "2026-06-08",
+      "title": "화물 운송 업무 로그를 자동화해야 하는 이유",
+      "pillar": "업무 로그 자동화",
+      "channels": [
+        "instagram",
+        "shorts"
+      ],
+      "briefPath": "content_briefs/033-field-insight-03.md",
+      "status": "planned",
+      "origin": "field_log_insight",
+      "sourceIssue": "반복 업무 로그와 전화 보고",
+      "insightScore": 4,
+      "createdAt": "2026-05-08T11:40:32.485Z"
+    }
+  ],
+  "updatedAt": "2026-05-08T12:06:32.695Z"
+}

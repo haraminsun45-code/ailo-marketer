@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="100%" height="100%" fill="#14261f"/>
+  <rect x="70" y="70" width="940" height="1210" rx="30" fill="#1e3a31" stroke="#b8dcce" stroke-width="3"/>
+  <circle cx="952" cy="128" r="28" fill="#b8dcce"/>
+  <text x="952" y="138" text-anchor="middle" font-size="24" font-weight="900" fill="#14261f">A</text>
+  <text x="108" y="140" font-size="30" font-weight="900" letter-spacing="5" fill="#b8dcce">팀 자체가 브랜드</text>
+  <text x="108" y="355" font-size="70" font-weight="900" fill="#f8fbf8">부산 야간 냉동팀처럼</text>
+<text x="108" y="441" font-size="70" font-weight="900" fill="#f8fbf8">신뢰가 보이는 팀</text>
+  <rect x="108" y="804" width="864" height="2" fill="#b8dcce" opacity="0.7"/>
+  <text x="108" y="870" font-size="34" font-weight="650" fill="#c9d8d2">기사 12명 · 평점 4.9 · 무사고</text>
+<text x="108" y="924" font-size="34" font-weight="650" fill="#c9d8d2">280일 · 심야배송 특화</text>
+<text x="108" y="978" font-size="34" font-weight="650" fill="#c9d8d2">팀의 운행 기록이 곧 팀의 명성이 됩니다.</text>
+  <text x="108" y="1244" font-size="28" font-weight="800" fill="#b8dcce">검증된 팀 기반 운송 네트워크</text>
+  <text x="972" y="1244" text-anchor="end" font-size="24" font-weight="900" fill="#b8dcce">Team Brand</text>
+</svg>

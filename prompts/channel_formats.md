@@ -1,33 +1,61 @@
-# Channel Formats
+# AILO Channel Formats
+
+모든 채널 콘텐츠는 한국어로 작성한다.
 
 ## Threads
 
-- 5 to 8 posts.
-- Each post should be concise.
-- Start with a real logistics problem.
-- End with a practical AILO point of view.
-- No heavy hashtags.
+- 5-8개 게시물
+- 실제 기사님 업무 문제로 시작
+- 기능 설명보다 현장 변화 중심
+- 팀 신뢰, 운송 기록, 업무 보조 관점을 자연스럽게 포함
+- 과한 해시태그와 가벼운 농담 금지
 
-## Instagram
+## Instagram Card News
 
-- Carousel: 5 to 7 slides.
-- Each slide needs a short title and body copy.
-- Caption should summarize the pain point and solution.
-- Include 5 to 10 Korean/English mixed hashtags.
+- SNS 업로드용 세로 비율을 기본으로 한다: 1080x1350
+- 5-7장 카드뉴스 구성
+- 실제 UI 이미지나 UI 카드 영역을 적극 활용한다
+- 각 카드는 짧은 헤드라인, 기사님 관점의 문제, 해결 흐름, 신뢰 지표를 담는다
+- 카드 톤은 현실적이고 신뢰감 있게 유지한다
+
+권장 흐름:
+
+1. 기사님 관점의 문제 정의
+2. 팀 또는 운송 현장 상황 제시
+3. AILO 기능을 해결책 흐름으로 소개
+4. 신뢰 데이터 또는 업무 기록 강조
+5. 팀이 브랜드가 되는 장면 제시
+6. CTA 또는 다음 행동
 
 ## Blog
 
-- SEO title.
-- Meta description.
-- Clear headings.
-- Explain the operational problem first.
-- Show how AILO changes the workflow.
-- Avoid sounding like a press release.
+- SEO 제목
+- 메타 설명
+- 명확한 소제목
+- 현장 문제를 먼저 설명
+- AILO가 업무 흐름을 어떻게 바꾸는지 설명
+- 보도자료처럼 딱딱하거나 광고처럼 가볍게 쓰지 않는다
 
-## Shorts
+## Shorts / Reels
 
-- 30 to 45 seconds.
-- Hook in first 3 seconds.
-- Scene-by-scene script.
-- Include subtitle text.
-- Use practical freight workflow visuals.
+- 30-45초
+- 첫 3초 안에 실제 업무 문제 제시
+- 장면별 대본, 자막, 내레이션 포함
+- 실제 화물 운송 업무에 맞는 화면 구성 사용
+- 과한 게임 효과, 밈 자막, SF 연출 금지
+
+## Team Brand Card
+
+팀 기반 콘텐츠에는 다음 항목을 사용할 수 있다.
+
+- 팀명
+- 기사 수
+- 평점
+- 무사고 기간
+- 특화 운송 분야
+- 주 활동 지역
+- 팀의 신뢰 포인트
+
+예시:
+
+부산 야간 냉동팀 · 기사 12명 · 평점 4.9 · 무사고 280일 · 심야배송 특화

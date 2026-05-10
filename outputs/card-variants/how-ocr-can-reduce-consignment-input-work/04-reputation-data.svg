@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="100%" height="100%" fill="#fffaf0"/>
+  <rect x="70" y="70" width="940" height="1210" rx="30" fill="#ffffff" stroke="#9b6b16" stroke-width="3"/>
+  <circle cx="952" cy="128" r="28" fill="#9b6b16"/>
+  <text x="952" y="138" text-anchor="middle" font-size="24" font-weight="900" fill="#fffaf0">A</text>
+  <text x="108" y="140" font-size="30" font-weight="900" letter-spacing="5" fill="#9b6b16">명성 경제</text>
+  <text x="108" y="355" font-size="70" font-weight="900" fill="#241f18">신뢰는 말보다 기록으로</text>
+<text x="108" y="441" font-size="70" font-weight="900" fill="#241f18">쌓입니다</text>
+  <rect x="108" y="804" width="864" height="2" fill="#9b6b16" opacity="0.7"/>
+  <text x="108" y="870" font-size="34" font-weight="650" fill="#6f675c">평점, 무사고 기간, 정시율, 특화 운송</text>
+<text x="108" y="924" font-size="34" font-weight="650" fill="#6f675c">이력.</text>
+<text x="108" y="978" font-size="34" font-weight="650" fill="#6f675c">좋은 팀의 경험이 데이터로 남고 다시 기회가</text>
+<text x="108" y="1032" font-size="34" font-weight="650" fill="#6f675c">됩니다.</text>
+  <text x="108" y="1244" font-size="28" font-weight="800" fill="#9b6b16">팀의 실력이 시장에서 보이게</text>
+  <text x="972" y="1244" text-anchor="end" font-size="24" font-weight="900" fill="#9b6b16">Reputation Data</text>
+</svg>

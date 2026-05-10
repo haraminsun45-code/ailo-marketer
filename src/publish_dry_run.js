@@ -77,36 +77,36 @@ function buildDryRunPlan({ drafts, channels, sourceFile }) {
 
 function toMarkdown(plan) {
   const lines = [
-    "# AILO Publishing Dry Run",
+    "# AILO 배포 확인",
     "",
-    `Source: ${plan.sourceFile}`,
-    `Created: ${plan.createdAt}`,
+    `원본: ${plan.sourceFile}`,
+    `생성 시각: ${plan.createdAt}`,
     ""
   ];
 
   if (plan.channels.threads) {
-    lines.push("## Threads", "");
+    lines.push("## 쓰레드", "");
     for (const post of plan.channels.threads) {
       lines.push(`${post.postNumber}. ${post.text}`, "");
     }
   }
 
   if (plan.channels.instagram) {
-    lines.push("## Instagram", "");
+    lines.push("## 인스타그램", "");
     for (const slide of plan.channels.instagram.carousel) {
-      lines.push(`### Slide ${slide.slideNumber}: ${slide.title}`, "", slide.body, "");
+      lines.push(`### 카드 ${slide.slideNumber}: ${slide.title}`, "", slide.body, "");
     }
-    lines.push("### Caption", "", plan.channels.instagram.caption, "", plan.channels.instagram.hashtags.join(" "), "");
+    lines.push("### 캡션", "", plan.channels.instagram.caption, "", plan.channels.instagram.hashtags.join(" "), "");
   }
 
   if (plan.channels.blog) {
-    lines.push("## Blog", "", `Title: ${plan.channels.blog.title}`, "", plan.channels.blog.body, "");
+    lines.push("## 블로그", "", `제목: ${plan.channels.blog.title}`, "", plan.channels.blog.body, "");
   }
 
   if (plan.channels.shorts) {
-    lines.push("## Shorts", "", `Title: ${plan.channels.shorts.title}`, `Duration: ${plan.channels.shorts.duration}`, "");
+    lines.push("## 숏폼", "", `제목: ${plan.channels.shorts.title}`, `길이: ${plan.channels.shorts.duration}`, "");
     for (const scene of plan.channels.shorts.scenes) {
-      lines.push(`### ${scene.time}`, "", `Visual: ${scene.visual}`, `Subtitle: ${scene.subtitle}`, `Narration: ${scene.narration}`, "");
+      lines.push(`### ${scene.time}`, "", `화면: ${scene.visual}`, `자막: ${scene.subtitle}`, `내레이션: ${scene.narration}`, "");
     }
   }
 

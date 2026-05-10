@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="100%" height="100%" fill="#f7f9fb"/>
+  <rect x="70" y="70" width="940" height="1210" rx="30" fill="#ffffff" stroke="#2c62a3" stroke-width="3"/>
+  <circle cx="952" cy="128" r="28" fill="#2c62a3"/>
+  <text x="952" y="138" text-anchor="middle" font-size="24" font-weight="900" fill="#f7f9fb">A</text>
+  <text x="108" y="140" font-size="30" font-weight="900" letter-spacing="5" fill="#2c62a3">실시간 GPS 관제</text>
+  <text x="108" y="355" font-size="70" font-weight="900" fill="#17212b">위치, 기록, 팀 상태를</text>
+<text x="108" y="441" font-size="70" font-weight="900" fill="#17212b">한 흐름으로 봅니다</text>
+  <rect x="108" y="804" width="864" height="2" fill="#2c62a3" opacity="0.7"/>
+  <text x="108" y="870" font-size="34" font-weight="650" fill="#637184">운행 위치와 업무 로그가 분리되면 운영</text>
+<text x="108" y="924" font-size="34" font-weight="650" fill="#637184">판단이 늦어집니다.</text>
+<text x="108" y="978" font-size="34" font-weight="650" fill="#637184">AILO는 팀 단위 운송 흐름을 더 명확하게</text>
+<text x="108" y="1032" font-size="34" font-weight="650" fill="#637184">보여줍니다.</text>
+  <text x="108" y="1244" font-size="28" font-weight="800" fill="#2c62a3">운송사와 기사님 모두를 위한 가시성</text>
+  <text x="972" y="1244" text-anchor="end" font-size="24" font-weight="900" fill="#2c62a3">Control Tower</text>
+</svg>

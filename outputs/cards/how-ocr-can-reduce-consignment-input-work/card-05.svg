@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="100%" height="100%" fill="#17352b"/>
+  <rect x="64" y="64" width="952" height="1222" rx="34" fill="#ffffff" fill-opacity="0.08" stroke="#b8dcce" stroke-width="3"/>
+  <text x="96" y="138" font-size="30" font-weight="800" letter-spacing="8" fill="#b8dcce">AILO CONTENT OPS</text>
+  <text x="96" y="210" font-size="42" font-weight="900" letter-spacing="6" fill="#b8dcce">이건 우리를 위한 AI</text>
+  <text x="96" y="364" font-size="70" font-weight="900" fill="#f8fbf8">인수증 OCR이 반복</text>
+<text x="96" y="450" font-size="70" font-weight="900" fill="#f8fbf8">입력을 줄이는 방법</text>
+  <rect x="96" y="834" width="888" height="2" fill="#b8dcce" opacity="0.8"/>
+  <text x="96" y="908" font-size="34" font-weight="650" fill="#d8e7e1">AILO는 화물 문서를 운송 업무 데이터로</text>
+<text x="96" y="962" font-size="34" font-weight="650" fill="#d8e7e1">바꾸는 것을 돕습니다.</text>
+  <text x="96" y="1224" font-size="28" font-weight="800" fill="#b8dcce">과한 게임이 아니라, 실제 운송 문화를 위한 플랫폼</text>
+  <text x="928" y="1224" text-anchor="end" font-size="26" font-weight="900" fill="#b8dcce">05</text>
+</svg>
