@@ -1,20 +1,28 @@
 {
-  "name": "ailo-marketer",
+  "name": "memory-fragments-mvp",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "dev": "node src/server.js",
-    "analyze:logs": "node src/analyze_field_logs.js",
-    "promote:insights": "node src/promote_insights.js",
-    "calendar": "node src/generate_calendar.js",
-    "run:item": "node src/run_calendar_item.js",
-    "run:daily": "node src/run_daily_pipeline.js",
-    "draft": "node src/generate_drafts.js",
-    "draft:sample": "node src/generate_drafts.js content_briefs/001-driver-worklog-automation.md",
-    "approve": "node src/approve_draft.js",
-    "publish:dry-run": "node src/publish_dry_run.js",
-    "check": "node src/check_structure.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.3"
+  }
 }

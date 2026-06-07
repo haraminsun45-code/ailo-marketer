@@ -1,227 +1,115 @@
-# AILO Marketer
+# 요즘의 나 MVP
 
-AILO Marketer is a lightweight marketing content pipeline for AILO, an AI-powered logistics workflow assistant for freight drivers and transportation companies.
+개인 기억 분석 웹앱 MVP입니다. 현재 단계에서는 실제 API, 데이터베이스, 로그인, 업로드 서버 없이 모바일 웹 화면 흐름과 한 줄 기록 저장 흐름을 검증합니다.
 
-The first goal is simple:
+## 기술 스택
 
-1. Turn one marketing brief into channel-ready drafts.
-2. Review drafts before publishing.
-3. Prepare safe publisher modules for Threads, Instagram, Blog, and Shorts.
-4. Keep a repeatable content archive for future analytics and reuse.
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- ESLint
+- localStorage 기반 더미 저장
+- Vercel 배포 대상
 
-## Operating Principle
+## 현재 구현 범위
 
-AILO is an early-stage startup, so every workflow should be designed for the lowest practical cost.
+- `/` 요즘의 나 홈
+- `/record` 기록 방식 선택
+- `/record/text` 한 줄 기록 작성
+- `/moments` 저장된 순간 확인
+- `/insights` 더미 발견 카드
+- `/profile` 준비 중 화면
 
-- Prefer local scripts, reusable templates, and dry runs before paid APIs or external services.
-- Use OpenAI generation only when it clearly saves time over the built-in template workflow.
-- Keep publishing semi-automated: the system drafts, checks, organizes, and prepares; a person reviews, edits, approves, and decides what actually goes live.
-- Avoid full automation for brand, safety, legal, operational, or customer-facing decisions.
-- Add paid tools, scheduled jobs, and direct publishing integrations only after the manual process proves repeatable and valuable.
+아직 연결하지 않은 기능:
 
-## Pipeline
+- Supabase
+- AWS EC2, S3, RDS
+- 실제 로그인
+- 사진 업로드
+- 음성 녹음
+- STT
+- LLM
+- 알림
+- 공유 API
+
+## 로컬 실행
+
+PowerShell 실행 정책 때문에 `npm`이 막히면 `npm.cmd`를 사용합니다.
+
+```powershell
+npm.cmd install
+npm.cmd run dev
+```
+
+로컬 확인 URL:
 
 ```text
-content_briefs/
-  -> prompts/
-  -> src/generate_drafts.js
-  -> outputs/drafts/
-  -> outputs/approved/
-  -> publishers/
-  -> analytics/
+http://127.0.0.1:3000/
 ```
 
-## Remote Work
+## 검증 명령어
 
-This project includes a Codespaces setup so work can continue from a browser or mobile device when the laptop is not available.
+```powershell
+npm.cmd run lint
+npm.cmd run build
+```
 
-Start here:
+## Vercel 배포 준비
+
+GitHub에 push한 뒤 Vercel에서 새 프로젝트로 import합니다.
+
+Vercel 설정:
+
+- Framework Preset: `Next.js`
+- Build Command: `npm run build`
+- Install Command: `npm install`
+- Output Directory: 비워둠
+- Environment Variables: 현재 MVP에서는 필요 없음
+
+## GitHub 업로드 순서
+
+```powershell
+git status
+git add .
+git commit -m "Prepare memory MVP for Vercel deployment"
+git branch -M main
+git remote add origin https://github.com/<OWNER>/<REPO>.git
+git push -u origin main
+```
+
+이미 remote가 있다면 `git remote add origin ...` 대신 기존 remote를 확인합니다.
+
+```powershell
+git remote -v
+git push
+```
+
+## Vercel 배포 순서
+
+1. Vercel에 로그인합니다.
+2. `Add New Project`를 선택합니다.
+3. GitHub 저장소를 import합니다.
+4. Framework가 `Next.js`로 잡혔는지 확인합니다.
+5. 환경변수는 추가하지 않습니다.
+6. `Deploy`를 누릅니다.
+7. 배포 완료 후 발급된 `https://...vercel.app` 주소를 휴대폰 브라우저에서 확인합니다.
+
+## 휴대폰 테스트 항목
+
+- 홈 화면이 모바일 폭에서 자연스럽게 보이는지
+- 홈의 `글` 버튼이 `/record/text`로 이동하는지
+- 빈 입력 저장 시 안내 문구가 보이는지
+- 한 줄 입력 후 저장하면 `/moments`로 이동하는지
+- `/moments`에서 저장한 글이 최신순으로 보이는지
+- 하단 내비게이션의 `순간들`과 가운데 `+` 버튼이 이동하는지
+- 새로고침 후에도 localStorage 기록이 유지되는지
+
+## 정적 이미지 경로
+
+홈 히어로 이미지는 다음 경로를 사용합니다.
 
 ```text
-docs/codespaces_setup.md
+public/images/home-silhouette-hero.png
 ```
 
-## MVP Workflow
-
-1. Generate or write a content calendar.
-2. Create briefs in `content_briefs/`.
-3. Run the draft generator.
-4. Review and edit generated drafts in `outputs/drafts/`.
-5. Move only human-approved content to `outputs/approved/`.
-6. Publish manually first, then connect API credentials only when the workflow is proven.
-7. Store dry-run publishing plans in `analytics/`.
-
-## AILO Content Principles
-
-- Practical, field-oriented, and grounded in real freight operations.
-- Voice-first workflow automation, not generic chatbot messaging.
-- Short, calm, useful communication.
-- Drivers focus on driving. AILO handles the workflow.
-- Avoid unrealistic AI claims and excessive futuristic language.
-
-## Channels
-
-- Threads: short narrative thread for awareness and problem framing.
-- Instagram: carousel copy, caption, hashtags.
-- Blog: SEO-oriented long-form article.
-- Shorts: 30-45 second script, scene beats, subtitles.
-
-## Quick Start
-
-```powershell
-npm install
-npm run calendar
-npm run draft
-```
-
-Run the local web dashboard:
-
-```powershell
-node src/server.js
-```
-
-Then open:
-
-```text
-http://localhost:4173
-```
-
-On Windows, you can also double-click:
-
-```text
-start-dashboard.bat
-```
-
-Dashboard flow:
-
-1. Select a day from the left calendar.
-2. Keep `테스트 모드` checked when testing without an API key.
-3. Click `초안 생성` for the normal low-cost, human-review workflow.
-4. Review the `브리프`, `블로그 초안`, `인스타그램 캡션`, `Threads`, and `숏폼 스크립트` tabs.
-5. Use `복사` to copy the current channel preview for manual posting or editing.
-6. Click `승인 및 dry-run 생성` only after a person approves the draft.
-7. Publish manually after the dry-run plan is reviewed.
-
-By default, the script uses the sample brief at `content_briefs/001-driver-worklog-automation.md`.
-
-Generate a 30-day content calendar:
-
-```powershell
-node src/generate_calendar.js
-```
-
-Generate a calendar from a specific start date:
-
-```powershell
-node src/generate_calendar.js --start=2026-05-07 --days=30
-```
-
-Calendar generation preserves existing brief files by default so reviewed or edited briefs are not overwritten. To regenerate matching briefs from the built-in topic templates, add `--force`.
-
-Generate drafts from a calendar item:
-
-```powershell
-node src/run_calendar_item.js --day=2 --template
-```
-
-or by date:
-
-```powershell
-node src/run_calendar_item.js --date=2026-05-08 --template
-```
-
-Without `--template`, the script uses OpenAI generation when `OPENAI_API_KEY` is available and falls back to the local template generator if needed.
-
-Run the daily pipeline for one calendar item:
-
-```powershell
-node src/run_daily_pipeline.js --day=2 --template
-```
-
-By default, this generates drafts only and updates the selected calendar item to `draft_ready`. This is the normal low-cost, human-review workflow.
-
-After a person reviews and accepts the draft, explicitly approve it and create a channel-matched dry-run plan:
-
-```powershell
-node src/run_daily_pipeline.js --day=2 --template --approve
-```
-
-The `--approve` mode copies reviewed content to `outputs/approved/`, writes dry-run publishing files in `analytics/`, updates the item to `dry_run_ready`, and still does not call any external publishing API.
-
-Analyze field logs and promote recommended topics into new planned calendar items:
-
-```powershell
-npm run analyze:logs
-npm run promote:insights
-```
-
-If `npm` is not available in the local shell, run the script with Node directly:
-
-```powershell
-node src/generate_drafts.js
-```
-
-To force the built-in template generator without calling OpenAI:
-
-```powershell
-node src/generate_drafts.js --template
-```
-
-To generate from another brief:
-
-```powershell
-node src/generate_drafts.js content_briefs/your-brief.md
-```
-
-Approve a reviewed draft:
-
-```powershell
-node src/approve_draft.js outputs/drafts/driver-worklog-automation.json
-```
-
-Create a publishing dry run from the latest approved draft:
-
-```powershell
-node src/publish_dry_run.js
-```
-
-Create a dry run for selected channels:
-
-```powershell
-node src/publish_dry_run.js --channels=threads,instagram
-```
-
-## Operating Guide
-
-- See `docs/operation_playbook.md` for weekly cadence, content pillars, approval flow, and topic backlog.
-- See `docs/api_publishing_notes.md` for platform-specific publishing notes.
-- See `docs/codespaces_setup.md` to move this project to GitHub Codespaces and continue from browser or mobile.
-
-## Environment
-
-Create `.env` later when connecting model and publishing APIs.
-
-For lowest-cost operation, leave `.env` empty and use `--template` mode while testing the content process. Add `OPENAI_API_KEY` only when AI generation is worth the usage cost.
-
-```text
-OPENAI_API_KEY=
-OPENAI_MODEL=gpt-5
-THREADS_ACCESS_TOKEN=
-THREADS_USER_ID=
-INSTAGRAM_ACCESS_TOKEN=
-INSTAGRAM_USER_ID=
-YOUTUBE_CLIENT_ID=
-YOUTUBE_CLIENT_SECRET=
-YOUTUBE_REFRESH_TOKEN=
-NAVER_CLIENT_ID=
-NAVER_CLIENT_SECRET=
-NAVER_ACCESS_TOKEN=
-```
-
-You can copy `.env.example` to `.env` and fill in only `OPENAI_API_KEY` for the first AI-powered draft workflow.
-
-If `OPENAI_API_KEY` is missing or the API call fails, the generator falls back to the local template generator so the workflow still produces drafts.
-
-## Publishing Status
-
-The repository currently supports draft generation, approval copying, and dry-run publishing plans. Real API publishing should remain off by default and should be enabled only after account permissions, app review, token handling, cost, and human approval checkpoints are confirmed.
+Next.js/Vercel 배포 환경에서는 `/images/home-silhouette-hero.png`로 제공됩니다.
